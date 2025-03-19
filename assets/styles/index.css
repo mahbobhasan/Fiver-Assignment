@@ -1,0 +1,33 @@
+.banner{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.banner>div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-details{
+    background-image: url(../images/lettuce-leave.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: bottom right;
+}
+
+.banner-slogan{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.banner-description{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: rgb(84, 84, 84);
+}
+
+
+.banner-image>img{
+    width: 100%;
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.text-fresh{
+    color: limegreen;
+}
+
+.text-food{
+    color: orange;
+}
+
+.text-great{
+    color: yellowgreen;
+}
+
+*{
+    margin: 0px;
+    font-family: "Big Shoulders", sans-serif;
+}
+.logo{
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav{
+    padding: 20px 0px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: orange; */
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+.nav-links li{
+    display: flex;
+    /* background-color: white; */
+    flex-direction: column;
+    justify-content: center;
+}
+.nav-links a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.nav-links a:hover{
+    color: orange;
+}
+
+hr{
+    border: 1px solid gray;
+    box-shadow: 10px 1px 10px 1px rgb(207, 207, 207);
+}
+
