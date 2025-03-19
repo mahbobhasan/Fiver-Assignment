@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+body{
+    background-color: gray;
+}
+
 .text-fresh{
     color: limegreen;
 }
