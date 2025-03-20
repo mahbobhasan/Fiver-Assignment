@@ -31,7 +31,7 @@
     margin-top: 10px;
     font-size: 1.5rem;
 }
-.history{
+.content{
     width: 70%;
     margin: 20px auto ;
     display: flex;
@@ -41,15 +41,20 @@
     border-radius: 10px;
     box-shadow: -1px 1px 10px 0px gray;
 }
-.history>div{
+.content>div{
     flex: 1;
 }
 
-.history-content-title{
+.content-details-title{
     font-size: 2.5rem;
 }
-.history-content-description{
+.content-details-description{
     font-size: 1.5rem;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+    gap: 20px;
 }
 
 img{
