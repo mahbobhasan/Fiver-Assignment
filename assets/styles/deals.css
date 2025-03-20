@@ -1,0 +1,105 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  .banner{
+    /* margin-top: 50px; */
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Full viewport height */
+    background: url('../images/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden.jpg') no-repeat center center/cover;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.667); /* 50% dark overlay */
+}
+
+/* Content (keeps text and elements clear) */
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    /* font-family: Arial, sans-serif; */
+}
+.banner-content h1{
+    font-size: 2.5rem;
+    color: white;
+}
+.banner-content p{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #e74c3c;
+  }
+
+  .deals {
+    margin: 20px 0;
+  }
+
+  .deal-item {
+    background: #f4f4f4;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+
+  .deal-item h3 {
+    margin: 0;
+    color: #e74c3c;
+  }
+
+  .deal-item p {
+    margin: 5px 0;
+  }
+
+  .how-to-order {
+    margin: 30px 0;
+  }
+
+  .how-to-order h2 {
+    color: #e74c3c;
+  }
+
+  .cta {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .cta a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  .cta a:hover {
+    background: #c0392b;
+  }
