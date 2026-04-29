@@ -22,11 +22,11 @@
 
                 <!-- Next Bean -->
                 {% if index + 1 < total %}
-                    <a href="/beans/{{ index + 1 }}" class="btn btn-primary">
+                    <a href="/learn/{{ step + 1 }}" class="btn btn-primary">
                         Next Bean →
                     </a>
                 {% else %}
-                    <a href="/learn/6" class="btn btn-secondary">
+                    <a href="/learn/{{ step + 1 }}" class="btn btn-secondary">
                         Finish Exploration
                     </a>
                 {% endif %}

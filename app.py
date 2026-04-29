@@ -23,7 +23,7 @@ learn_data = [
     {
         "title": "Coffee Beans",
         "content": "Coffee beans are one of the most important factors that influence the taste of an Americano. Different types of beans produce different flavor profiles, ranging from smooth and mild to strong and bitter. By exploring different beans, you can understand how each type affects the final taste of your coffee.",
-        "action": "/beans"
+        "action": "/learn/6"
     },
     {
         "title": "Best Beans",
@@ -168,19 +168,14 @@ session['progress']=0
 @app.route("/learn/<int:step>")
 def learn(step):
     if step > len(learn_data):
-        return redirect("/quiz/1")
-
+        return render_template("end_learn.html")
+    elif step>=6 and step<=9:
+        return render_template("bean.html",bean=beans[step-6],step=step)
+    elif 
     lesson = learn_data[step-1]
     session["progress"]=step
 
     return render_template("learn.html", lesson=lesson, step=step)
-
-
-@app.route("/beans")
-def beans_intro():
-    return redirect("/beans/0")
-
-
 
 @app.route("/beans/<int:i>")
 def bean_page(i):
