@@ -167,12 +167,14 @@ session['progress']=0
 # Learning
 @app.route("/learn/<int:step>")
 def learn(step):
-    if step > len(learn_data):
+    if step > len(learn_data)+4:
         return render_template("end_learn.html")
     elif step>=6 and step<=9:
-        return render_template("bean.html",bean=beans[step-6],step=step)
-    elif 
+        return render_template("bean.html",bean=beans[step-6],step=step,index=step-6, total=len(beans))
     lesson = learn_data[step-1]
+    if step>=10:
+        lesson=learn_data[step-5]
+        
     session["progress"]=step
 
     return render_template("learn.html", lesson=lesson, step=step)
