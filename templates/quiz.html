@@ -25,7 +25,11 @@
         </div>
       {% endfor %}
 
-      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      <button type="submit" class="btn btn-primary mt-3" 
+      {% if feedback_msg is defined and feedback_msg %}
+      disabled
+      {% endif %}
+      >Submit</button>
     </form>
   </div>
 
@@ -55,7 +59,7 @@
         </div>
       </div>
     
-      <a href="/quiz/{{ next_q }}" class="btn btn-success w-100">Next Quiz</a>
+      <a href="/quiz/{{ next_q }}" class="btn btn-success w-100">{% if %}</a>
     {% endif %}
   </div>
 

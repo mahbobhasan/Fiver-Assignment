@@ -16,7 +16,7 @@ learn_data = [
         "image": "/static/images/americano.jpg"
     },
     {
-        "title": "Ingredients",
+        "title": "Ingredients & Tools",
         "content": "To make an Americano, you need a few simple ingredients and tools. The main components are freshly ground coffee beans and hot water. An espresso machine is used to extract the coffee properly. The quality of the beans and the freshness of the grind play a major role in the final taste of the drink.",
         "image": "/static/images/americano.jpg"
     },
@@ -36,34 +36,36 @@ learn_data = [
         # "image": "/static/images/temperature.jpg"
     },
     {
-        "title": "Preparation",
-        "content": "Preparing an Americano involves several important steps. First, the coffee beans are ground to the correct consistency. Then, the coffee is tamped evenly in the portafilter before brewing the espresso. Finally, hot water is added to the espresso to create the Americano. Each step must be done carefully to achieve the best flavor.",
+        "title": "Step-1 Pull a ‘blank shot’",
+        "content": "Before brewing espresso, run hot water through the machine with an empty portafilter (no coffee). This quick “blank shot” warms up the group head and portafilter, stabilizes brewing temperature, and rinses away any old coffee residue. Let the water run for about 3–5 seconds (or until it flows smoothly), and if possible, run it into your cup to preheat the cup as well. Discard the water, then proceed to brew your espresso.",
         "image": "/static/images/preparation.jpg"
     }
     ,
     {
-        "title": "Step-1: Grinding Coffee Beans",
+        "title": "Step-2: Grinding Coffee Beans",
         "content": "The first step in preparing an Americano is grinding the coffee beans. The beans should be ground to a medium-fine consistency, similar to table salt. This allows proper extraction during brewing. If the grind is too coarse, the coffee will be weak, and if it is too fine, it may become overly bitter or over-extracted.",
         "image": "/static/images/preparation.jpg"
     },
     {
-        "title": "Step-2: Tamping the Coffee",
+        "title": "Step-3 Fill the portafilter",
+        "content": "For a single shot of espresso, use about 0.2 ounces of ground beans (one rounded teaspoon). Use one rounded tablespoon (0.6 ounces) of ground beans for a double espresso.",
+        "image": "/static/images/preparation.jpg"
+    }
+    ,
+    {
+        "title": "Step-4: Tamping the Coffee",
         "content": "After grinding, the coffee grounds are placed into the portafilter and evenly tamped down using a tamper. This step is important because it ensures uniform pressure during extraction. Uneven tamping can cause water to flow irregularly, leading to poor flavor balance in the espresso shot.",
         "image": "/static/images/preparation.jpg"
     },
     {
-        "title": "Step-3: Brewing Espresso",
+        "title": "Step-5: Brewing Espresso",
         "content": "Once the coffee is properly tamped, it is placed into the espresso machine for brewing. Hot pressurized water is forced through the compacted coffee grounds to extract rich espresso. The brewing time usually lasts around 25 to 30 seconds, producing a strong and concentrated coffee base.",
         "image": "/static/images/preparation.jpg"
     },
+    
     {
-        "title": "Step-4: Adding Hot Water",
-        "content": "After the espresso is brewed, hot water is added to it to create the Americano. The ratio of water to espresso can vary depending on taste preference. This step dilutes the intensity of espresso while preserving its aroma and flavor, resulting in a smoother coffee drink.",
-        "image": "/static/images/preparation.jpg"
-    },
-    {
-        "title": "Step-5: Final Americano",
-        "content": "The final step is serving the Americano. At this stage, the drink has a balanced flavor that combines the strength of espresso with the smoothness of hot water. It can be enjoyed plain or customized with milk or sugar depending on personal preference.",
+        "title": "Step-6: Adding Hot Water And Serve",
+        "content": "After the espresso is brewed, hot water is added to it to create the Americano. The ratio of water to espresso can vary depending on taste preference. This step dilutes the intensity of espresso while preserving its aroma and flavor. The final step is serving the Americano. At this stage, the drink has a balanced flavor that combines the strength of espresso with the smoothness of hot water. It can be enjoyed plain or customized with milk or sugar depending on personal preference.",
         "image": "/static/images/preparation.jpg"
     }
 ]
@@ -99,29 +101,33 @@ quiz_data = [
         "feedback": {
             "Single shot": "Single shot is lighter and less strong than a double shot.",
             "Double shot": "Correct! More espresso creates a stronger base.",
-            "Adding more water": "More water dilutes espresso, making it weaker."
+            "Adding more water": "More water dilutes coffee, making it weaker."
         }
     },
+
+    # New Q4 (from image)
     {
-        "question": "What is the correct way to make an Americano?",
-        "options": ["Add espresso to hot water", "Add hot water to espresso", "Mix espresso with cold milk"],
-        "answer": "Add hot water to espresso",
-        "tip": "Tip: An Americano is espresso diluted with hot water—milk is not part of the standard recipe.",
+        "question": "Which roast gives a smoky flavor?",
+        "options": ["Light roast", "Dark roast", "Medium roast"],
+        "answer": "Dark roast",
+        "tip": "Tip: Dark roasts are roasted longer, which brings out deeper, smokier flavors and reduces acidity.",
         "feedback": {
-            "Add espresso to hot water": "Close, but the standard definition is adding hot water to espresso.",
-            "Add hot water to espresso": "Correct! Americano is made by adding hot water to espresso.",
-            "Mix espresso with cold milk": "That would be closer to a milk-based drink, not an Americano."
+            "Light roast": "Light roasts tend to be brighter and more acidic, with less smoky flavor.",
+            "Dark roast": "Correct! Dark roast commonly has a smoky, bold flavor due to longer roasting.",
+            "Medium roast": "Medium roasts are more balanced and typically less smoky than dark roasts."
         }
     },
+
+    # New Q5 (from image)
     {
-        "question": "What is the ideal espresso brewing temperature range?",
-        "options": ["70–80°C", "90–96°C", "100–110°C"],
-        "answer": "90–96°C",
-        "tip": "Tip: Too hot can over-extract and taste bitter; too cold can under-extract and taste weak.",
+        "question": "Which factor mainly controls how strong an Americano tastes?",
+        "options": ["Amount of espresso", "Water temperature", "Amount of sugar"],
+        "answer": "Amount of espresso",
+        "tip": "Tip: Strength mostly depends on how much espresso is used and how much it’s diluted with water.",
         "feedback": {
-            "70–80°C": "Too low—this often under-extracts and tastes weak.",
-            "90–96°C": "Correct! This is a common ideal range for espresso extraction.",
-            "100–110°C": "Too high—this can over-extract and increase bitterness."
+            "Amount of espresso": "Correct! More espresso (e.g., double shot) generally makes a stronger Americano.",
+            "Water temperature": "Temperature affects extraction and bitterness, but it’s not the main control for overall strength.",
+            "Amount of sugar": "Sugar changes sweetness, not the coffee’s strength."
         }
     }
 ]
@@ -149,7 +155,7 @@ beans = [
     }
 ]
 
-
+print(len(learn_data)+len(beans))
 app = Flask(__name__)
 app.secret_key = "secret"
 
@@ -162,13 +168,13 @@ session={}
 session['answers']=[]
 session['corrected']=0
 session['progress']=0
-
-
-# Learning
+@app.route("/learn_complete")
+def end_learning():
+    return render_template("end_learn.html")
 @app.route("/learn/<int:step>")
 def learn(step):
     if step > len(learn_data)+4:
-        return render_template("end_learn.html")
+        return redirect("/learn_complete")
     elif step>=6 and step<=9:
         return render_template("bean.html",bean=beans[step-6],step=step,index=step-6, total=len(beans))
     lesson = {}
@@ -181,24 +187,11 @@ def learn(step):
 
     return render_template("learn.html", lesson=lesson, step=step)
 
-@app.route("/beans/<int:i>")
-def bean_page(i):
-    if i >= len(beans):
-        return redirect("/learn/5")  # continue learning
-
-    bean = beans[i]
-    return render_template("bean.html", bean=bean, index=i, total=len(beans))
-
-
-
-@app.route("/select_bean/<int:i>")
-def select_bean(i):
-    session["selected_bean"] = beans[i]["name"]
-    return redirect(f"/learn/{session['progress']+1}")  # continue learning
-
-
 @app.route("/quiz/<int:q>", methods=["GET", "POST"])
 def quiz(q):
+    if q==1:
+        session['corrected']=0
+        session['answers']=[]
     if q > len(quiz_data):
         return redirect("/result")
 
@@ -214,28 +207,11 @@ def quiz(q):
                 session['answers'].append(selected)
             is_correct=True
         print(session)
-        return render_template("quiz.html",is_correct=is_correct,feedback_msg=question['feedback'][selected],q=question,next_q=q+1)
+        return render_template("quiz.html",is_correct=is_correct,feedback_msg=question['feedback'][selected],q=question,next_q=q+1,total=len(quiz_data))
 
     return render_template("quiz.html", q=quiz_data[q-1], index=q-1)
 
-# Feedback
-@app.route("/feedback/<int:q>/<string:option>")
-def feedback(q, option):
-    question = quiz_data[q-1]
-    # print(question)
-    correct = question["answer"]
-    # print(correct)
-    feedback_text = question["feedback"][option]
-    
-    return render_template(
-        "feedback.html",
-        option=option,
-        correct=correct,
-        feedback=feedback_text,
-        next_q=q + 1
-    )
 
-# Result
 @app.route("/result")
 def result():
     return render_template("result.html", score=session["corrected"], total=len(quiz_data))

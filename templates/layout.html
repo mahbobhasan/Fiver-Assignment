@@ -43,7 +43,10 @@
           <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if request.path.startswith('/learning') %}active{% endif %}" href="/learn/1">Learn</a>
+          <a class="nav-link " href="/learn/1">Insights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if request.path.startswith('/learn') %}active{% endif %}" href="/learn/12">Tutorial</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {% if request.path.startswith('/quiz') or request.path.startswith('/feedback') or request.path.startswith('/result') %}active{% endif %}"
