@@ -59,7 +59,13 @@
         </div>
       </div>
     
-      <a href="/quiz/{{ next_q }}" class="btn btn-success w-100">{% if %}</a>
+      <a href="/quiz/{{ next_q }}" class="btn btn-success w-100">
+      {% if next_q>total %}
+        See Result
+      {% else %}
+        Next Quiz
+      {% endif %}
+      </a>
     {% endif %}
   </div>
 
