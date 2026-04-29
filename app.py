@@ -171,9 +171,11 @@ def learn(step):
         return render_template("end_learn.html")
     elif step>=6 and step<=9:
         return render_template("bean.html",bean=beans[step-6],step=step,index=step-6, total=len(beans))
-    lesson = learn_data[step-1]
+    lesson = {}
     if step>=10:
         lesson=learn_data[step-5]
+    else:
+        lesson=learn_data[step-1]
         
     session["progress"]=step
 
